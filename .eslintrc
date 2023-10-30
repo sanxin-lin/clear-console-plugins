@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "simple-import-sort"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-useless-escape": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^vue$", "^vue-router$", "^ant-design-vue$", "^echarts$"],
+          [".*\\.vue$"], // .vue 文件
+          [".*/assets/.*", "^@/assets$"],
+          [".*/config/.*", "^@/config$"],
+          [".*/hooks/.*", "^@/hooks$"],
+          [".*/plugins/.*", "^@/plugins$"],
+          [".*/router/.*", "^@/router$"],
+          ["^@/services$", "^@/services/.*"],
+          [".*/store/.*", "^@/store$"],
+          [".*/utils/.*", "^@/utils$"],
+          ["^"],
+          ["^type "]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error"
+  }
+}
