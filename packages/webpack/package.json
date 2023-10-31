@@ -26,7 +26,17 @@
     "@types/node": "^18.15.13",
     "tsup": "^7.2.0"
   },
-  "keywords": [],
+  "keywords": [
+    "babel-plugin-perfect-console",
+    "console",
+    "console.log",
+    "webpack",
+    "babel"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sanxin-lin/clear-console-plugins.git"
+  }
 }

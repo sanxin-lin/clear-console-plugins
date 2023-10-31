@@ -1,6 +1,6 @@
 {
   "name": "vite-perfect-console-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "clear console",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -12,7 +12,12 @@
     "build": "unbuild",
     "release": "npm publish"
   },
-  "keywords": [],
+  "keywords": [
+    "vite-perfect-console-plugin",
+    "console",
+    "console.log",
+    "vite"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -30,5 +35,9 @@
     "@types/babel__traverse": "^7.20.1",
     "tsup": "^7.2.0",
     "unbuild": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sanxin-lin/clear-console-plugins.git"
   }
 }
