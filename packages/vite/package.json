@@ -1,11 +1,34 @@
 {
-  "name": "vite-clear-console-plugin",
+  "name": "vite-perfect-console-plugin",
   "version": "1.0.0",
   "description": "clear console",
-  "main": "index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "unbuild",
+    "release": "npm publish"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.23.0",
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.2",
+    "@babel/types": "^7.23.0",
+    "source-map": "^0.7.4"
+  },
+  "peerDependencies": {
+    "vite": "^2.9.0 || ^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.4",
+    "@types/babel__traverse": "^7.20.1",
+    "tsup": "^7.2.0",
+    "unbuild": "^2.0.0"
+  }
 }
